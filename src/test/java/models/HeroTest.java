@@ -11,4 +11,10 @@ public class HeroTest {
         new Hero("Glory", 25, "Beauty", "Pride");
         assertTrue(true);
     }
+
+    @Test
+    public void functionalityTest(){
+        Hero king = new Hero("Glory", 25, "Beauty", "Pride");
+        assertTrue(Hero.getAll().contains(king));
+    }
 }

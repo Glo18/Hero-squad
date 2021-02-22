@@ -16,6 +16,15 @@ public class Squad {
         this.cause = cause;
         members.add(this);
     }
+    public String getName() {
+        return name;
+    }
+    public int getSize() {
+        return size;
+    }
+    public String getCause() {
+        return cause;
+    }
 
     public static List<Object> getMembers() {
         return members;
@@ -23,5 +32,9 @@ public class Squad {
 
     public static void add(Hero hero) {
         members.add(hero);
+    }
+
+    public static boolean theHeroInTheSquadIs(Hero hero){
+        return members.contains(hero);
     }
 }

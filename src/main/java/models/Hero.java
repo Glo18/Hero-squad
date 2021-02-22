@@ -43,4 +43,14 @@ public class Hero {
 
         return instances;
     }
+
+    public static List<Hero> addHero() {
+        Hero aqua = new Hero("Spiderman", 20, "Trapping with spiderwebs", "kryptonite");
+        Hero iron = new Hero("Batman", 32, "Good vision at night", "not killing");
+        Hero king = new Hero("Venom",17,"Superhuman strength", "sound");
+        instances.add(aqua);
+        instances.add(iron);
+        instances.add(king);
+        return instances;
+    }
 }
