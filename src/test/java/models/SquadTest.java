@@ -1,13 +1,15 @@
 package models;
 
-import junit.framework.TestCase;
+import org.junit.Test;
 
-public class SquadTest extends TestCase {
+import static org.junit.Assert.*;
 
-    public void setUp() throws Exception {
-        super.setUp();
-    }
-
-    public void tearDown() throws Exception {
+public class SquadTest {
+    @Test
+    public void squadTest(){
+        Squad squad = new Squad("Thor", 10, "sexism");
+        Hero marvel = new Hero("Thor", 23, "fighting", "light");
+        Squad.add(marvel);
+        assertTrue(Squad.getMembers().contains(squad));
     }
 }
