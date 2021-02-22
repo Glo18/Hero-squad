@@ -37,4 +37,39 @@ public class App {
         model.put("newHero",newHero);
         return new ModelAndView(model, "successhero.hbs");
     }, new HandlebarsTemplateEngine());
+
+    get("/hero", (request, response) -> {
+        Map<String, Object> model = new HashMap<>();
+        ArrayList<Hero> hero = (ArrayList<Hero>) Hero.getAll();//displays hero
+        model.put("hero",hero);
+        return new ModelAndView(model, "hero.hbs");
+    }, new HandlebarsTemplateEngine());
+
+    get("/squadform", (request, response) -> {
+        Map<String, Object> model = new HashMap<>();
+        return new ModelAndView(model, "squadform.hbs");
+    }, new HandlebarsTemplateEngine());
+
+    post("/success", (request, response) -> {
+
+        Map<String, Object> model = new HashMap<>();
+        String name = request.queryParams("name");
+        int size = Integer.parseInt(request.queryParams("size"));
+        String cause = request.queryParams("cause");
+
+        Squad squad = new Squad(name, size, cause);
+
+        model.put("squad", squad);
+        return new ModelAndView(model, "successSquad.hbs");
+    }, new HandlebarsTemplateEngine());
+
+    get("/squad", (request, response) -> {
+        Map<String, Object> model = new HashMap<>();
+        model.put("squad", Squad.getMembers()); //displays squad created
+        return new ModelAndView(model, "squad.hbs");
+    }, new HandlebarsTemplateEngine());
+
+
+}
+
 }
