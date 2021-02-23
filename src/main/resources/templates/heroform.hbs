@@ -3,7 +3,10 @@
 {{/partial}}
 
 {{#partial "content"}}
-    <body style="background-image: url(../public/images/herof.jpeg); background-size:cover; background-repeat:no-repeat;">
+    <body>
+<!--    <div class="h-form">-->
+<!--    <img src="/images/herof.jpeg" >-->
+        <div class="jumbotron" style="background-color: mediumturquoise">
     <form action="/new/hero" method="post">
         <div class="form-group">
             <label for="name">Enter the name of the hero:{{name}}</label>
@@ -23,7 +26,8 @@
         </div>
         <button class="btn btn-success" type="submit">Submit</button>
     </form>
-    </body>
+    </div>
+    <body>
 {{/partial}}
 
 {{> layout.hbs}}
