@@ -3,7 +3,9 @@
 {{/partial}}
 
 {{#partial "content"}}
-    <body style="background-image: url(../public/images/squadf.jpeg); background-size:cover; background-repeat:no-repeat;">
+<!--    <div class="s-form">-->
+<!--    <img src="/images/squadf.jpeg" >-->
+       <div class="jumbotron" style="background-color: purple">
     <form action="/success" method="post">
         <div class="form-group">
             <label for="name">Enter the name of your squad:{{name}}</label>
@@ -19,7 +21,7 @@
         </div>
         <button class="btn btn-success" type="submit">Submit</button>
     </form>
-    </body>
+    </div>
 {{/partial}}
 
 {{> layout.hbs}}

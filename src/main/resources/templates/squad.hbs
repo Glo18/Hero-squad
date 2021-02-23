@@ -6,13 +6,16 @@
     {{#if "squad"}}
         <div class="col-md-4">
         {{#each squad}}
-                <div class="card" style="background-image: url(../public/images/squad.jpeg); background-size:cover; background-repeat:no-repeat;">
+            <div class="squad">
+                    <img src="/images/squad.jpeg">
+                <div class="s-text">
                 <h3>Name: {{name}}</h3>
                 <hr>
                 <p>Cause: {{cause}}</p>
                 <hr>
                 <p>Size: {{size}}</p>
                 <hr>
+            </div>
             </div>
         {{/each}}
         </div>
