@@ -48,3 +48,8 @@ gradlew
 ############
 .idea
 .idea/
+.settings
+.classpath
+.project
+.project~083217ef56fff67ce4b1e7315f57bd306ecfdcfc
+bin
