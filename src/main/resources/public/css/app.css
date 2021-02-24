@@ -59,11 +59,12 @@ html {
 .squad {
     position: relative;
     background-image: url("../images/squad.jpeg");
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: mediumslateblue;
 }
 .s-text {
     position: absolute;
@@ -73,6 +74,7 @@ html {
     background-color: transparent;
     color: black;
     font-weight: bold;
+    font-size: medium;
     padding-right: 20px;
     padding-left: 20px;
 }
