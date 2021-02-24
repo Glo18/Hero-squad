@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="models.SquadTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-02-22T23:30:50" hostname="glory-HP-ProBook-430-G7" time="0.002">
+  <properties/>
+  <testcase name="squadTest" classname="models.SquadTest" time="0.001"/>
+  <testcase name="squadFunction" classname="models.SquadTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
